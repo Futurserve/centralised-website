@@ -1,0 +1,23 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% if site.unlisted %}<meta name="robots" content="noindex, nofollow">{% endif %}
+{% assign page_title = page.title | default: site.title %}
+<title>{% if page.url == "/" %}{{ site.title }} | {{ site.tagline }}{% else %}{{ page_title }} | {{ site.title }}{% endif %}</title>
+<meta name="description" content="{{ page.description | default: site.description | strip_newlines | escape }}">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{ page_title | escape }}">
+<meta property="og:description" content="{{ page.description | default: site.description | strip_newlines | escape }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:image" content="{{ site.brand.share_image | absolute_url }}">
+<meta name="theme-color" content="{{ site.brand.primary }}">
+<link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="32x32">
+<link rel="icon" href="{{ '/assets/img/cbs-favicon.svg' | relative_url }}" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{{ '/assets/img/apple-touch-icon.png' | relative_url }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family={{ site.brand.font_display | replace: ' ', '+' }}:wght@600;700;800&family={{ site.brand.font_body | replace: ' ', '+' }}:wght@400;600&display=swap">
+<link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"{{ site.company.legal_name }}","url":"{{ site.url }}","logo":"{{ site.brand.logo | absolute_url }}","email":"{{ site.contact.email }}","telephone":"{{ site.contact.phone_link }}","areaServed":"ZA"}
+</script>

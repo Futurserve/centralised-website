@@ -1,0 +1,23 @@
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <img src="{{ site.brand.logo_reversed | relative_url }}" alt="{{ site.title }}" width="230" height="60" loading="lazy">
+      <p class="footer-tagline">{{ site.tagline }}</p>
+    </div>
+    <div>
+      <p class="footer-head">Contact</p>
+      <p><a href="tel:{{ site.contact.phone_link }}">{{ site.contact.phone }}</a><br>
+      <a href="https://wa.me/{{ site.contact.whatsapp }}" rel="noopener">WhatsApp</a><br>
+      <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></p>
+    </div>
+    <div>
+      <p class="footer-head">Explore</p>
+      <p>{% for item in site.data.navigation %}<a href="{{ item.url | relative_url }}">{{ item.title }}</a><br>{% endfor %}</p>
+    </div>
+  </div>
+  <div class="wrap footer-legal">
+    <p>{{ site.company.legal_name }} · Reg. {{ site.company.registration }} · {{ site.company.regulator_line }}</p>
+    <p>Privacy: this website has no contact forms, analytics or tracking. The booking page is run by Google under its own privacy policy. If you contact us, we use your details only to respond to your enquiry and for any business discussion that follows.</p>
+    <p>© {{ site.time | date: "%Y" }} {{ site.company.legal_name }}</p>
+  </div>
+</footer>

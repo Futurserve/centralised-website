@@ -1,0 +1,55 @@
+# ------------------------------------------------------------------
+# SITE SETTINGS: everything specific to this business lives here.
+# To make a new site from this template, change this file, the
+# logo files in assets/img/, and the page content. Nothing else.
+# ------------------------------------------------------------------
+title: Centralised Business Solutions
+short_name: CBS
+tagline: People | Systems | Growth
+description: >-
+  Back-office administration, compliance and systems for rental, property
+  management and scheme management businesses across South Africa, and
+  outright purchase of established property businesses.
+# Soft launch on GitHub's address. On launch day change to:
+#   url: "https://centralised.co.za"  and  baseurl: ""
+url: "https://futurserve.github.io"
+baseurl: "/centralised-website"
+lang: en-ZA
+
+# Soft launch: true keeps search engines away. Set to false on launch day.
+unlisted: true
+
+brand:
+  primary: "#12304F"      # CBS Navy
+  accent: "#C3A96A"       # CBS Gold (accents only, never text on light)
+  accent_text: "#8A6F2E"  # Dark Gold (gold-coloured text on white)
+  light: "#F4F6F9"
+  muted: "#5B6B80"        # Slate
+  font_display: "Montserrat"
+  font_body: "Source Sans 3"
+  logo: /assets/img/cbs-logo-horizontal.svg
+  logo_reversed: /assets/img/cbs-logo-horizontal-reversed.svg
+  share_image: /assets/img/social-share.jpg
+
+contact:
+  name: Marc Cattaneo
+  role: Business Services Specialist
+  phone: "+27 82 927 6783"
+  phone_link: "+27829276783"
+  whatsapp: "27829276783"
+  email: marc@centralised.co.za
+  photo: /assets/img/marc-cattaneo-800.jpg
+  photo_webp: /assets/img/marc-cattaneo-800.webp
+  booking_url: ""          # Google appointment schedule link; blank = buttons go to the contact section
+  area: Supporting property businesses across South Africa.
+
+company:
+  legal_name: Centralised Business Solutions (Pty) Ltd
+  registration: "2020/656133/07"
+  regulator_line: "Registered with the PPRA, FFC 202401011400279"
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

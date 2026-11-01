@@ -1,0 +1,2 @@
+{% comment %} Usage: include booking.html label="Book a call" class="btn" {% endcomment %}
+{% if site.contact.booking_url != "" %}<a class="{{ include.class | default: 'btn' }}" href="{{ site.contact.booking_url }}" target="_blank" rel="noopener">{{ include.label | default: "Book a call" }}</a>{% else %}<a class="{{ include.class | default: 'btn' }}" href="{{ '/about.html#contact' | relative_url }}">{{ include.label | default: "Book a call" }}</a>{% endif %}

@@ -1,0 +1,57 @@
+---
+layout: default
+title: About & Contact
+description: Centralised Business Solutions combines local relationships with central administration, processes and systems. Talk to Marc Cattaneo, Business Services Specialist.
+permalink: /about.html
+---
+<section class="hero page-hero">
+  <div class="wrap">
+    <p class="eyebrow">About CBS</p>
+    <h1>Local knowledge, backed by central capability.</h1>
+    <p class="lead">Centralised Business Solutions exists to help independent property professionals and established property businesses operate more effectively.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap grid-2">
+    <div class="stack">
+      <p class="eyebrow">{{ site.tagline }}</p>
+      <h2>Relationships are the asset. Administration shouldn't hold them back.</h2>
+    </div>
+    <div class="stack">
+      <p>We believe local relationships are one of the most valuable assets in property management, and they shouldn't be held back by the administrative burden of running a business. Our model combines local knowledge and relationships with central administrative capability, established processes and proven systems.</p>
+      <p>CBS is part of a group of property companies with long-established estate agency, rental management, scheme management and short-term rental operations, run from a central office.</p>
+      <p>We work with operators to find where support makes a genuine difference: taking on selected administrative functions, supporting an existing rental or scheme operation, or exploring the acquisition of an established business.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-light" id="contact">
+  <div class="wrap stack">
+    <div class="section-head">
+      <p class="eyebrow">Your first conversation</p>
+      <h2>Let's start a conversation.</h2>
+      <p class="lead">Whether you run a rental portfolio, manage sectional title schemes, run an independent agency or are thinking of selling an established business, we'd be pleased to hear from you. Conversations are confidential.</p>
+    </div>
+    <div class="contact-card">
+      <picture>
+        <source srcset="{{ site.contact.photo_webp | relative_url }}" type="image/webp">
+        <img src="{{ site.contact.photo | relative_url }}" alt="{{ site.contact.name }}" width="800" height="800" loading="lazy">
+      </picture>
+      <div class="stack">
+        <div class="stack-sm">
+          <h2>{{ site.contact.name }}</h2>
+          <p class="role">{{ site.contact.role }}, {{ site.title }}</p>
+        </div>
+        <p style="color:var(--on-primary-muted)">Marc first registered with the PPRA in 2012. He holds the NQF 5 National Certificate in Real Estate and passed the PDE 4 professional designation exam in 2018. He has worked as a broker manager and as the principal of an agency of 70 to 80 agents, so he knows the practical challenges of running a property business and the difference the right support makes.</p>
+        <ul class="contact-list">
+          <li><span>Telephone</span> <a href="tel:{{ site.contact.phone_link }}">{{ site.contact.phone }}</a></li>
+          <li><span>WhatsApp</span> <a href="https://wa.me/{{ site.contact.whatsapp }}" rel="noopener">{{ site.contact.phone }}</a></li>
+          <li><span>Email</span> <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></li>
+        </ul>
+        <div class="btn-row">{% include booking.html class="btn" label="Book a confidential conversation" %}</div>
+        <p style="color:var(--on-primary-muted);font-size:16px">{{ site.contact.area }}</p>
+      </div>
+    </div>
+  </div>
+</section>
