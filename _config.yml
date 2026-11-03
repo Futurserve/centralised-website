@@ -40,7 +40,7 @@ contact:
   email: marc@centralised.co.za
   photo: /assets/img/marc-cattaneo-800.jpg
   photo_webp: /assets/img/marc-cattaneo-800.webp
-  booking_url: ""          # Google appointment schedule link; blank = buttons go to the contact section
+  booking_url: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ19K6euLqB7-xh3OuqW1FH_dgCUb9Dhl0Ht6d1q7Oc1a6e9BB6avre3F2aW1NvL5QeXD9k9xqgV"          # Google appointment schedule link; blank = buttons go to the contact section
   area: Supporting property businesses across South Africa.
 
 company:
