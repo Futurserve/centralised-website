@@ -12,12 +12,12 @@ description: >-
   outright purchase of established property businesses.
 # Soft launch on GitHub's address. On launch day change to:
 #   url: "https://centralised.co.za"  and  baseurl: ""
-url: "https://futurserve.github.io"
-baseurl: "/centralised-website"
+url: "https://centralised.co.za"
+baseurl: ""
 lang: en-ZA
 
 # Soft launch: true keeps search engines away. Set to false on launch day.
-unlisted: true
+unlisted: false
 
 brand:
   primary: "#12304F"      # CBS Navy
